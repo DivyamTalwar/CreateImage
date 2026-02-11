@@ -4,7 +4,7 @@
     {
       "parameters": {
         "operation": "toBinary",
-        "sourceProperty": "data[0].b64_json",
+        "sourceProperty": "data[0].non_existent_property",
         "options": {}
       },
       "type": "n8n-nodes-base.convertToFile",
@@ -43,8 +43,8 @@
     },
     {
       "parameters": {
-        "method": "POST",
-        "url": "https://api.openai.com/v1/images/generations",
+        "method": "GET",
+        "url": "https://api.openai.com/v1/images/generation",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -108,7 +108,7 @@
         },
         "folderId": {
           "__rl": true,
-          "value": "1TgQu-5hlOzO1X28TMMzLxfhunhPSUIqy",
+          "value": "invalid-folder-id",
           "mode": "list",
           "cachedResultName": "AI Image Generation",
           "cachedResultUrl": "https://drive.google.com/drive/folders/1TgQu-5hlOzO1X28TMMzLxfhunhPSUIqy"
